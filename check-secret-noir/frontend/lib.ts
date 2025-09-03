@@ -1,12 +1,7 @@
 import { Noir } from "@noir-lang/noir_js";
 import { reconstructHonkProof, UltraHonkBackend } from "@aztec/bb.js";
 import { CompiledCircuit, InputMap } from "@noir-lang/types";
-import {
-  BlobTransaction,
-  Blob,
-  ProofTransaction,
-  NodeApiHttpClient,
-} from "hyli";
+import { Blob, ProofTransaction, NodeApiHttpClient } from "hyli";
 
 /**
  * Builds a blob transaction containing a secret derived from an identity and password.
@@ -89,6 +84,8 @@ export const build_proof_transaction = async (
 
   return {
     contract_name: "check_secret",
+    program_id: Array.from(await backend.getVerificationKey()),
+    verifier: "noir",
     proof: Array.from(reconstructedProof),
   };
 };
