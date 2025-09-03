@@ -58,6 +58,7 @@ export const build_proof_transaction = async (
 ): Promise<ProofTransaction> => {
   const noir = new Noir(circuit);
   const backend = new UltraHonkBackend(circuit.bytecode);
+  const vk = await backend.getVerificationKey();
 
   const hashed_password_bytes = await sha256(stringToBytes(password));
   let encoder = new TextEncoder();
@@ -84,7 +85,7 @@ export const build_proof_transaction = async (
 
   return {
     contract_name: "check_secret",
-    program_id: Array.from(await backend.getVerificationKey()),
+    program_id: Array.from(vk),
     verifier: "noir",
     proof: Array.from(reconstructedProof),
   };
