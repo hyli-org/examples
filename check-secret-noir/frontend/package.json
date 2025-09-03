@@ -3,7 +3,7 @@
   "description": "A library for checking secrets using Hyli and Noir.",
   "author": "Hyli",
   "license": "MIT",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "type": "module",
   "main": "dist/check-secret.cjs.js",
   "module": "dist/check-secret.es.js",
@@ -34,7 +34,7 @@
     "@noir-lang/noir_wasm": "1.0.0-beta.2"
   },
   "dependencies": {
-    "hyli": "^0.3.0"
+    "hyli": "^0.4.0"
   },
   "devDependencies": {
     "@types/bun": "^1.2.14",
