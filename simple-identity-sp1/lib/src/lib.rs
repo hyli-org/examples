@@ -90,7 +90,7 @@ impl IdentityContractState {
         {
             return Err("Identity already exists".to_string());
         }
-        Ok("Successfully registered identity for account: {}".to_string())
+        Ok(format!("Successfully registered identity for account: {}", account))
     }
 
     fn verify_identity(

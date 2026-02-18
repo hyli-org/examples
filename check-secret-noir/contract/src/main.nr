@@ -1,4 +1,4 @@
-// Simple Token Contract implementation in Noir
+// Check Secret Contract implementation in Noir
 
 fn main(
     // The version of the HyleOutput. This is unchecked for now.
@@ -33,7 +33,7 @@ fn main(
     // Number of blobs in the transaction. tx_blob_count >= blob_number
     tx_blob_count: pub u32,
     // -------------------
-    // Weither the execution was successful or not. If false, the BlobTransaction will be
+    // Whether the execution was successful or not. If false, the BlobTransaction will be
     // settled as failed.
     success: pub bool,
     // ------ Private inputs ------

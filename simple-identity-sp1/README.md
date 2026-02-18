@@ -7,7 +7,7 @@ The logic is the very similar to the `simple_token` example (for risc0)
 
 - [Rust](https://rustup.rs/)
 - [SP1 4.0.0-rc1](https://docs.succinct.xyz/getting-started/install.html)
-- [A running hyle devnet](https://docs.hyle.eu/developers/quickstart/devnet/)
+- [A running Hyli devnet](https://docs.hyli.org/developers/quickstart/devnet/)
 
 ## Running the Project
 

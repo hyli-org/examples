@@ -101,7 +101,7 @@ impl SimpleToken {
 impl From<sdk::StateCommitment> for SimpleToken {
     fn from(state: sdk::StateCommitment) -> Self {
         borsh::from_slice(&state.0)
-            .map_err(|_| "Could not decode hyllar state".to_string())
+            .map_err(|_| "Could not decode SimpleToken state".to_string())
             .unwrap()
     }
 }

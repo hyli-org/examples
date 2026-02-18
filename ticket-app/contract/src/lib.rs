@@ -34,7 +34,7 @@ impl sdk::HyleContract for TicketAppState {
         sdk::StateCommitment(borsh::to_vec(self).expect("Failed to encode TicketAppState"))
     }
 }
-/// Enum representing the actions that can be performed by the Amm contract.
+/// Enum representing the actions that can be performed by the TicketApp contract.
 #[derive(BorshSerialize, BorshDeserialize, Debug, Clone)]
 pub enum TicketAppAction {
     BuyTicket {},
@@ -87,7 +87,7 @@ impl TicketAppState {
                 if amount < self.ticket_price.1 {
                     return Err(format!(
                         "Transfer amount should be at least {} but was {}",
-                        self.ticket_price.0, &recipient
+                        self.ticket_price.1, amount
                     ));
                 }
             }
