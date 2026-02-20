@@ -6,13 +6,13 @@ Welcome to the simple_token Risc0 example.
 
 - [Install Rust](https://www.rust-lang.org/tools/install) (you'll need `rustup` and Cargo).
 - For our example, [install RISC Zero](https://dev.risczero.com/api/zkvm/install).
-- [Start a single-node devnet](https://docs.hyle.eu/developers/quickstart/devnet/). We recommend using [dev-mode](https://dev.risczero.com/api/generating-proofs/dev-mode) with `-e RISC0_DEV_MODE=1` for faster iterations during development.
+- [Start a single-node devnet](https://docs.hyli.org/developers/quickstart/devnet/). We recommend using [dev-mode](https://dev.risczero.com/api/generating-proofs/dev-mode) with `-e RISC0_DEV_MODE=1` for faster iterations during development.
 
 ## Quickstart
 
 ### Build and register the contract
 
-To build all methods and register the smart contract on the local node [from the source](https://github.com/Hyle-org/examples/blob/simple_erc20/simple-token/host/src/main.rs), run:
+To build all methods and register the smart contract on the local node [from the source](https://github.com/hyli-org/examples/blob/main/simple-token/host/src/main.rs), run:
 
 ```bash
 cargo run -- register 1000

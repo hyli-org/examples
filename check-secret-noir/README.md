@@ -13,7 +13,7 @@ This is a demonstration project that shows how to implement a secret checking sy
 - Zero-knowledge proof based secret verification
 - Web interface for submitting identity and password
 - Real-time proof verification display
-- Secure password handling through zero-knowledge proofs, settling on Hyle network.
+- Secure password handling through zero-knowledge proofs, settling on Hyli network.
 
 ## Setup and Running
 

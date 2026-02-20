@@ -7,7 +7,7 @@ The logic is very similar to the `simple_token` example (for risc0)
 
 - [Rust](https://rustup.rs/)
 - [SP1 4.1.x](https://docs.succinct.xyz/getting-started/install.html)
-- [A running hyle devnet](https://docs.hyle.eu/developers/quickstart/devnet/)
+- [A running Hyli devnet](https://docs.hyli.org/developers/quickstart/devnet/)
 
 ## Running the Project
 
@@ -20,9 +20,9 @@ cd program
 cargo prove build
 ```
 
-### Register the Program on hyle
+### Register the Program on Hyli
 
-To register the program (i.e. contract) on hyle with an initial supply of 1000 run:
+To register the program (i.e. contract) on Hyli with an initial supply of 1000 run:
 
 ```sh
 cd script
@@ -37,4 +37,4 @@ cargo run --release -- transfer faucet.simple_token bob.simple_token 100
 ```
 
 This will send the transactions to transfer 100 token from faucet to bob. The suffix `.simple_token` is for identity management.
-It is the default name of this contract when it was registered. See [hyle documentation](https://docs.hyle.eu/developers/general-doc/identity/) for further details.
+It is the default name of this contract when it was registered. See [hyle documentation](https://docs.hyli.org/developers/general-doc/identity/) for further details.

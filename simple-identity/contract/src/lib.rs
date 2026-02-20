@@ -90,7 +90,7 @@ impl IdentityContractState {
         {
             return Err("Identity already exists".to_string());
         }
-        Ok("Successfully registered identity for account: {}".to_string())
+        Ok(format!("Successfully registered identity for account: {}", account))
     }
 
     fn verify_identity(
@@ -125,7 +125,7 @@ impl Default for IdentityContractState {
     }
 }
 
-/// Helpers to transform the contrat's state in its on-chain state digest version.
+/// Helpers to transform the contract's state in its on-chain state digest version.
 /// In an optimal version, you would here only returns a hash of the state,
 /// while storing the full-state off-chain
 impl From<sdk::StateCommitment> for IdentityContractState {

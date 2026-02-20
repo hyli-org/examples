@@ -1,6 +1,6 @@
 # Simple Identity risc0 example
 
-On Hylé, any smart contract can serve as proof of identity. This flexibility allows you to register your preferred identity source as a smart contract for account identification. Hylé also ships [a native `hydentity` contract](https://github.com/Hyle-org/hyle/tree/main/contracts/hydentity) for simplicity.
+On Hyli, any smart contract can serve as proof of identity. This flexibility allows you to register your preferred identity source as a smart contract for account identification. Hyli also ships [a native `hydentity` contract](https://github.com/hyli-org/hyli/tree/main/contracts/hydentity) for simplicity.
 
 This is a Risc0 example called simple_identity.
 
@@ -8,13 +8,13 @@ This is a Risc0 example called simple_identity.
 
 - [Install Rust](https://www.rust-lang.org/tools/install) (you'll need `rustup` and Cargo).
 - For our example, [install RISC Zero](https://dev.risczero.com/api/zkvm/install).
-- [Start a single-node devnet](https://docs.hyle.eu/developers/quickstart/devnet/). We recommend using [dev-mode](https://dev.risczero.com/api/generating-proofs/dev-mode) with `-e RISC0_DEV_MODE=1` for faster iterations during development.
+- [Start a single-node devnet](https://docs.hyli.org/developers/quickstart/devnet/). We recommend using [dev-mode](https://dev.risczero.com/api/generating-proofs/dev-mode) with `-e RISC0_DEV_MODE=1` for faster iterations during development.
 
 ## Quickstart
 
 ### Build and register the identity contract
 
-To build all methods and register the smart contract on the local node [from the source](https://github.com/Hyle-org/examples/blob/simple_erc20/simple-token/host/src/main.rs), run:
+To build all methods and register the smart contract on the local node [from the source](https://github.com/hyli-org/examples/blob/main/simple-identity/host/src/main.rs), run:
 
 ```bash
 cargo run -- register-contract
